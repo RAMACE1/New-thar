@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Village Life of Thar - Authentic Village Experience in Barmer, Rajasthan</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <h1>🏜️ Exploring the Village Life of Thar</h1>
+                </div>
+                <div class="nav__menu">
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#experience" class="nav__link">Experience</a>
+                    <a href="#gallery" class="nav__link">Gallery</a>
+                    <a href="#booking" class="nav__link">Pricing & Booking</a>
+                    <a href="#about" class="nav__link">About Us</a>
+                </div>
+                <div id="google_translate_element" class="nav__translate"></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__slider">
+            <div class="hero__slide active">
+                <div class="hero__placeholder">
+                    <span>🏜️ Desert Village Sunrise</span>
+                </div>
+            </div>
+            <div class="hero__slide">
+                <div class="hero__placeholder">
+                    <span>🏡 Traditional Village Homes</span>
+                </div>
+            </div>
+            <div class="hero__slide">
+                <div class="hero__placeholder">
+                    <span>👥 Village Community Life</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__content">
+            <div class="container">
+                <h1 class="hero__title">Live Like a Local in the Heart of Thar Desert</h1>
+                <p class="hero__subtitle">Experience authentic village life in Barmer, Rajasthan - No luxury, Just reality</p>
+                <button class="btn btn--primary btn--lg" onclick="scrollToSection('booking')">Book Your Village Experience</button>
+            </div>
+        </div>
+        <div class="hero__nav">
+            <button class="hero__nav-btn prev" onclick="changeSlide(-1)">‹</button>
+            <button class="hero__nav-btn next" onclick="changeSlide(1)">›</button>
+        </div>
+    </section>
+
+    <!-- Video Reels Section -->
+    <section id="gallery" class="video-reels">
+        <div class="container">
+            <h2>Life in Our Village</h2>
+            <div class="video-grid">
+                <div class="video-card" onclick="playVideo('village-morning')">
+                    <div class="video-placeholder">
+                        <div class="play-btn">▶</div>
+                        <span>Morning Village Life</span>
+                    </div>
+                </div>
+                <div class="video-card" onclick="playVideo('cooking-traditional')">
+                    <div class="video-placeholder">
+                        <div class="play-btn">▶</div>
+                        <span>Traditional Cooking</span>
+                    </div>
+                </div>
+                <div class="video-card" onclick="playVideo('farming-work')">
+                    <div class="video-placeholder">
+                        <div class="play-btn">▶</div>
+                        <span>Farm Work</span>
+                    </div>
+                </div>
+                <div class="video-card" onclick="playVideo('evening-stories')">
+                    <div class="video-placeholder">
+                        <div class="play-btn">▶</div>
+                        <span>Evening Stories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Experience Section -->
+    <section id="experience" class="about-experience">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2>What Makes Us Different</h2>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>✨ 100% Authentic Experience</h3>
+                            <p>Live exactly as villagers do - no special arrangements or tourist accommodations</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🏠 Live Like a Local</h3>
+                            <p>Stay in traditional village homes, eat home-cooked meals, participate in daily activities</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🤝 Cultural Exchange</h3>
+                            <p>Meaningful connections with village families through shared experiences and genuine interactions</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🌱 Sustainable Living</h3>
+                            <p>Experience organic, eco-friendly lifestyle that has been practiced for generations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-statement">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Our Mission</h3>
+                            <p>We believe travel should be about genuine human connections and authentic experiences. Our village opens its doors not as a tourist destination, but as a home where you become part of our extended family for a few days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Life Timeline -->
+    <section class="daily-timeline">
+        <div class="container">
+            <h2>A Day in Village Life</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">6:00 AM</div>
+                    <div class="timeline-content">
+                        <h3>Morning tea and sunrise</h3>
+                        <p>Start your day with traditional chai while watching the desert sunrise</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">7:00 AM</div>
+                    <div class="timeline-content">
+                        <h3>Farm work with family</h3>
+                        <p>Join the family in daily agricultural activities and animal care</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">9:00 AM</div>
+                    <div class="timeline-content">
+                        <h3>Traditional breakfast preparation</h3>
+                        <p>Learn to cook authentic Rajasthani breakfast on clay stoves</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">11:00 AM</div>
+                    <div class="timeline-content">
+                        <h3>Village exploration and meeting neighbors</h3>
+                        <p>Walk through the village, meet neighbors, understand community life</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">1:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Lunch and rest time</h3>
+                        <p>Enjoy traditional lunch followed by afternoon rest, as is village custom</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">4:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Handicraft learning or animal care</h3>
+                        <p>Learn pottery, weaving, or help with livestock - your choice!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">6:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Evening tea and village gossip</h3>
+                        <p>Join the evening tea circle and listen to village stories</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">8:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Dinner and folk music sessions</h3>
+                        <p>Traditional dinner followed by folk songs and local music</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Storytelling under stars</h3>
+                        <p>End the day with stories and legends under the clear desert sky</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Activities -->
+    <section class="cultural-activities">
+        <div class="container">
+            <h2>Cultural Activities</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-placeholder">🍳</div>
+                    <h3>Traditional Cooking</h3>
+                    <p>Learn to cook on clay stoves using local ingredients</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-placeholder">🌾</div>
+                    <h3>Farming</h3>
+                    <p>Participate in seasonal farming and agricultural work</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-placeholder">🏺</div>
+                    <h3>Handicrafts</h3>
+                    <p>Try your hand at pottery, weaving, and local crafts</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-placeholder">🎵</div>
+                    <h3>Folk Music</h3>
+                    <p>Learn traditional songs and participate in evening performances</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-placeholder">🐪</div>
+                    <h3>Animal Care</h3>
+                    <p>Help with camels, goats, and other village livestock</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-placeholder">🎲</div>
+                    <h3>Traditional Games</h3>
+                    <p>Play local games and participate in village competitions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Village Stories -->
+    <section class="village-stories">
+        <div class="container">
+            <h2>Meet Your Hosts</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-avatar">👨‍🌾</div>
+                    <h3>Ramji Bhai</h3>
+                    <p>Village Elder & Storyteller</p>
+                    <p>"I've lived in this village for 65 years. Every guest becomes family, and every story shared creates a bond that lasts forever."</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-avatar">👩‍🍳</div>
+                    <h3>Kamla Devi</h3>
+                    <p>Traditional Cook & Craft Teacher</p>
+                    <p>"Through food and crafts, I share the wisdom passed down by my grandmother. Each meal tells the story of our ancestors."</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-avatar">👨‍🎤</div>
+                    <h3>Mukesh Ji</h3>
+                    <p>Folk Singer & Village Guide</p>
+                    <p>"Our songs carry the history of Thar desert. When you learn our music, you learn our soul."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Information -->
+    <section class="seasonal-info">
+        <div class="container">
+            <div class="card">
+                <div class="card__body">
+                    <h2>🌤️ Best Time to Visit: November to March</h2>
+                    <div class="season-details">
+                        <div class="season-point">
+                            <h3>Perfect Weather</h3>
+                            <p>Pleasant temperatures ranging from 10°C to 25°C, ideal for outdoor activities and comfortable village living</p>
+                        </div>
+                        <div class="season-point">
+                            <h3>Harvest Season</h3>
+                            <p>Experience the joy of harvest time, participate in traditional farming celebrations and enjoy fresh produce</p>
+                        </div>
+                        <div class="season-point">
+                            <h3>Cultural Festivities</h3>
+                            <p>Many local festivals and celebrations happen during this period, offering authentic cultural experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packing Guide -->
+    <section class="packing-guide">
+        <div class="container">
+            <h2>What to Bring for Your Village Stay</h2>
+            <div class="packing-grid">
+                <div class="packing-category">
+                    <h3>🥾 Essential Items</h3>
+                    <ul>
+                        <li>Comfortable cotton clothes</li>
+                        <li>Sun protection (hat, sunglasses)</li>
+                        <li>Personal medications</li>
+                        <li>Camera for memories</li>
+                        <li>Reusable water bottle</li>
+                    </ul>
+                </div>
+                <div class="packing-category">
+                    <h3>🤝 Cultural Sensitivity</h3>
+                    <ul>
+                        <li>Modest clothing covering shoulders and knees</li>
+                        <li>Respect for local customs and traditions</li>
+                        <li>Open mind for new experiences</li>
+                        <li>Patience with language barriers</li>
+                        <li>Willingness to participate in daily activities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Booking -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2>Pricing & Booking</h2>
+            <div class="booking-grid">
+                <div class="pricing-card">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Village Life Experience</h3>
+                            <div class="price">$199 <span>per person</span></div>
+                            <div class="duration">4 Nights, 5 Days</div>
+                            <h4>Package Includes:</h4>
+                            <ul class="package-includes">
+                                <li>✓ Transport from Jodhpur</li>
+                                <li>✓ Village home accommodation</li>
+                                <li>✓ Traditional local meals</li>
+                                <li>✓ Cultural activities participation</li>
+                                <li>✓ Folk music and storytelling sessions</li>
+                                <li>✓ Farm and household activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Select Your Dates</h3>
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <button class="calendar-nav" id="prev-month">‹</button>
+                                    <span id="current-month"></span>
+                                    <button class="calendar-nav" id="next-month">›</button>
+                                </div>
+                                <div class="calendar" id="calendar"></div>
+                                <div id="selected-dates" class="selected-dates"></div>
+                            </div>
+                            <form id="booking-form" class="booking-form-fields">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Number of Guests</label>
+                                    <select class="form-control" required>
+                                        <option value="">Select guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Special Requirements</label>
+                                    <textarea class="form-control" rows="3" placeholder="Any dietary restrictions, health concerns, or special requests..."></textarea>
+                                </div>
+                                <button type="button" class="btn btn--primary btn--full-width" onclick="proceedToPayment()">Proceed to Payment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Secure Payment</h3>
+                <button class="modal-close" onclick="closePaymentModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-summary">
+                    <h4>Booking Summary</h4>
+                    <div class="summary-item">
+                        <span>Experience:</span>
+                        <span>Village Life of Thar (4N5D)</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Guests:</span>
+                        <span id="payment-guests">1</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Dates:</span>
+                        <span id="payment-dates">-</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span id="payment-total">$199</span>
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <h4>Choose Payment Method</h4>
+                    <button class="payment-btn" onclick="processPayment('upi')">
+                        <span>💳</span> Pay with UPI
+                    </button>
+                    <button class="payment-btn" onclick="processPayment('razorpay')">
+                        <span>💰</span> Pay with Razorpay
+                    </button>
+                    <button class="payment-btn" onclick="processPayment('paypal')">
+                        <span>🌐</span> Pay with PayPal
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Is the accommodation comfortable?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You'll stay in a traditional village home with basic amenities, just like the locals. It's authentic, not luxurious. Expect simple bedding, shared facilities, and the genuine experience of village life.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What about food safety?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All meals are prepared with fresh, local ingredients following traditional methods. We ensure cleanliness while maintaining authenticity. The food is the same that the host family eats daily.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Do villagers speak English?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Basic English is spoken, and we facilitate meaningful cultural exchange through gestures, smiles, and shared experiences. Language barriers often lead to the most heartwarming moments!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What if there's a medical emergency?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We have basic first aid available and can arrange transport to the nearest medical facility if needed. We recommend bringing personal medications and travel insurance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What's included and what's not?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Included: Transport from Jodhpur, accommodation, all meals, cultural activities. Not included: Personal expenses, travel to Jodhpur, tips, shopping, and anything not mentioned in inclusions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Cancellation policy?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Free cancellation up to 7 days before arrival. 50% refund for 3-7 days notice. No refund for cancellations within 3 days of arrival date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-placeholder">
+                        <p>"This was not tourism, this was life. I learned more about humanity in 5 days than I had in years of travel."</p>
+                        <div class="testimonial-author">- Sarah M., Germany</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-placeholder">
+                        <p>"The authenticity is unmatched. No cameras, no performance - just real people sharing their real lives with you."</p>
+                        <div class="testimonial-author">- James L., Australia</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-placeholder">
+                        <p>"I came as a tourist and left as family. The connections I made here will last a lifetime."</p>
+                        <div class="testimonial-author">- Priya S., Mumbai</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="about" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact & Location</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>📍 Location</h3>
+                            <p>Village Home, Barmer District, Rajasthan, India<br>
+                            Starting point: Jodhpur (We arrange pickup)</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📱 WhatsApp</h3>
+                            <p>+91-XXXXXXXXXX</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>explore@tharvillagelife.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🚗 How to Reach</h3>
+                            <p>Fly/train to Jodhpur → We pick you up → 3-hour drive to our village → Begin authentic experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <h3>🗺️ Location Map</h3>
+                        <p>Village in Barmer District<br>Thar Desert, Rajasthan</p>
+                        <div class="map-visual">📍</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏜️ Exploring the Village Life of Thar</h3>
+                    <p>Authentic village experiences in the heart of Rajasthan's Thar desert. Come as a guest, leave as family.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>WhatsApp: +91-XXXXXXXXXX<br>
+                    Email: explore@tharvillagelife.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Our Journey</h4>
+                    <p>📷 Instagram: @tharvillagelife<br>
+                    📘 Facebook: Thar Village Experience</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Exploring the Village Life of Thar. Committed to authentic, sustainable tourism.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
